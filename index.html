@@ -1,0 +1,2090 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Malineni Lakshmaiah Women's Engineering College</title>
+
+<style>
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",Arial,sans-serif;
+    color:#1e293b;
+    background:#f8fafc;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+textarea{
+    font-family:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.topbar{
+    background:#071b3a;
+    color:#fff;
+    font-size:13px;
+    padding:8px 0;
+}
+
+.topbar-content{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.topbar-right{
+    display:flex;
+    gap:20px;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar{
+    height:82px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 5%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0b63ce,#6d28d9);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    font-size:18px;
+    box-shadow:0 5px 15px rgba(11,99,206,.25);
+}
+
+.brand-text h2{
+    font-size:16px;
+    line-height:1.2;
+    color:#0b3b7a;
+}
+
+.brand-text p{
+    font-size:10px;
+    color:#64748b;
+    margin-top:3px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    font-size:14px;
+    font-weight:600;
+    color:#334155;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#0b63ce;
+}
+
+.nav-apply{
+    background:#0b63ce;
+    color:white !important;
+    padding:11px 18px;
+    border-radius:6px;
+}
+
+.nav-apply:hover{
+    background:#084d9f;
+}
+
+.menu{
+    display:none;
+    font-size:28px;
+    color:#0b63ce;
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:650px;
+    background:
+        linear-gradient(90deg,rgba(4,24,54,.92),rgba(11,74,143,.72),rgba(24,24,60,.5)),
+        url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1800&q=85");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+
+.hero-content{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:8px 15px;
+    border:1px solid rgba(255,255,255,.4);
+    background:rgba(255,255,255,.1);
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(40px,6vw,72px);
+    line-height:1.05;
+    max-width:900px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ffd54a;
+}
+
+.hero p{
+    max-width:720px;
+    font-size:18px;
+    color:#e2e8f0;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 24px;
+    border-radius:6px;
+    font-weight:700;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#ffd54a;
+    color:#172033;
+}
+
+.btn-primary:hover{
+    background:#ffca28;
+    transform:translateY(-2px);
+}
+
+.btn-light{
+    border:1px solid #fff;
+    color:#fff;
+}
+
+.btn-light:hover{
+    background:#fff;
+    color:#0b3b7a;
+}
+
+
+/* =========================================================
+   QUICK INFO
+========================================================= */
+
+.quick-info{
+    background:#fff;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    margin:-45px auto 0;
+    position:relative;
+    z-index:5;
+    width:90%;
+    max-width:1100px;
+    border-radius:10px;
+    padding:25px;
+}
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.quick-item{
+    text-align:center;
+    border-right:1px solid #e2e8f0;
+}
+
+.quick-item:last-child{
+    border:none;
+}
+
+.quick-icon{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.quick-item h3{
+    color:#0b3b7a;
+    font-size:16px;
+}
+
+.quick-item p{
+    font-size:12px;
+    color:#64748b;
+}
+
+
+/* =========================================================
+   SECTION COMMON
+========================================================= */
+
+section{
+    padding:90px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-heading .label{
+    color:#0b63ce;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:800;
+}
+
+.section-heading h2{
+    font-size:38px;
+    color:#102a56;
+    margin:8px 0;
+}
+
+.section-heading p{
+    max-width:650px;
+    margin:auto;
+    color:#64748b;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about{
+    background:#fff;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-image{
+    height:450px;
+    border-radius:14px;
+    background:
+        linear-gradient(rgba(11,99,206,.1),rgba(7,27,58,.15)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=85");
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.13);
+}
+
+.about-content h2{
+    font-size:35px;
+    color:#102a56;
+    margin-bottom:18px;
+}
+
+.about-content p{
+    color:#64748b;
+    margin-bottom:15px;
+}
+
+.about-list{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.about-list div{
+    padding:13px;
+    background:#eff6ff;
+    color:#0b4f9c;
+    border-radius:7px;
+    font-weight:600;
+    font-size:14px;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats{
+    background:linear-gradient(135deg,#0b3b7a,#0b63ce);
+    color:#fff;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+}
+
+.stat{
+    padding:15px;
+    border-right:1px solid rgba(255,255,255,.2);
+}
+
+.stat:last-child{
+    border:none;
+}
+
+.stat h2{
+    font-size:45px;
+    color:#ffd54a;
+}
+
+.stat p{
+    font-size:14px;
+}
+
+
+/* =========================================================
+   PROGRAMS
+========================================================= */
+
+.programs{
+    background:#f8fafc;
+}
+
+.program-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.program-card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:30px;
+    transition:.3s;
+}
+
+.program-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 35px rgba(0,0,0,.09);
+}
+
+.program-icon{
+    width:58px;
+    height:58px;
+    border-radius:12px;
+    background:#e0efff;
+    color:#0b63ce;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    margin-bottom:18px;
+}
+
+.program-card h3{
+    color:#102a56;
+    margin-bottom:8px;
+}
+
+.program-card p{
+    color:#64748b;
+    font-size:14px;
+}
+
+
+/* =========================================================
+   FACILITIES
+========================================================= */
+
+.facilities{
+    background:#fff;
+}
+
+.facility-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.facility{
+    padding:30px 15px;
+    text-align:center;
+    background:#f8fafc;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.facility:hover{
+    background:#eff6ff;
+    transform:translateY(-5px);
+}
+
+.facility-icon{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.facility h3{
+    color:#102a56;
+    font-size:16px;
+}
+
+
+/* =========================================================
+   PLACEMENTS
+========================================================= */
+
+.placements{
+    background:#f1f7ff;
+}
+
+.placement-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.placement-content h2{
+    color:#102a56;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.placement-content p{
+    color:#64748b;
+    margin-bottom:20px;
+}
+
+.placement-points{
+    display:grid;
+    gap:12px;
+}
+
+.placement-point{
+    background:#fff;
+    padding:15px;
+    border-radius:8px;
+    font-weight:600;
+    color:#334155;
+}
+
+.placement-image{
+    height:400px;
+    border-radius:14px;
+    background:
+        linear-gradient(rgba(11,59,122,.15),rgba(11,99,206,.2)),
+        url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85");
+    background-size:cover;
+    background-position:center;
+}
+
+
+/* =========================================================
+   EVENTS
+========================================================= */
+
+.events{
+    background:#fff;
+}
+
+.events-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.event-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.event-img{
+    height:190px;
+    background-size:cover;
+    background-position:center;
+}
+
+.event-1{
+    background-image:url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80");
+}
+
+.event-2{
+    background-image:url("https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80");
+}
+
+.event-3{
+    background-image:url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80");
+}
+
+.event-content{
+    padding:22px;
+}
+
+.event-date{
+    color:#0b63ce;
+    font-size:12px;
+    font-weight:800;
+}
+
+.event-content h3{
+    color:#102a56;
+    margin:7px 0;
+}
+
+.event-content p{
+    color:#64748b;
+    font-size:14px;
+}
+
+
+/* =========================================================
+   ADMISSION
+========================================================= */
+
+.admission{
+    background:
+        linear-gradient(90deg,rgba(4,25,56,.95),rgba(11,99,206,.85)),
+        url("https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1600&q=85");
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    text-align:center;
+}
+
+.admission h2{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.admission p{
+    color:#dbeafe;
+    max-width:650px;
+    margin:0 auto 25px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact{
+    background:#f8fafc;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-info{
+    background:linear-gradient(135deg,#0b3b7a,#0b63ce);
+    color:#fff;
+    border-radius:12px;
+    padding:35px;
+}
+
+.contact-info h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.contact-item{
+    margin:20px 0;
+}
+
+.contact-item strong{
+    display:block;
+    margin-bottom:3px;
+}
+
+.contact-item span{
+    color:#dbeafe;
+    font-size:14px;
+}
+
+.contact-form{
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.form-group{
+    margin-bottom:17px;
+}
+
+.form-group label{
+    display:block;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #dbe3ec;
+    border-radius:6px;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#0b63ce;
+}
+
+.form-group textarea{
+    min-height:130px;
+    resize:vertical;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#071b3a;
+    color:#fff;
+    padding:55px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-col h3{
+    margin-bottom:18px;
+}
+
+.footer-col p,
+.footer-col li{
+    color:#aebdd0;
+    font-size:14px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col li{
+    margin:9px 0;
+}
+
+.footer-col a:hover{
+    color:#fff;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:40px;
+    padding-top:20px;
+    text-align:center;
+    color:#8ea0b7;
+    font-size:13px;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+#topButton{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#0b63ce;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        position:absolute;
+        top:82px;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:25px 7%;
+        display:none;
+        box-shadow:0 8px 15px rgba(0,0,0,.1);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .quick-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid,
+    .placement-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .program-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .facility-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .events-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .topbar{
+        display:none;
+    }
+
+    .navbar{
+        height:70px;
+    }
+
+    .nav-links{
+        top:70px;
+    }
+
+    .brand-text h2{
+        font-size:13px;
+    }
+
+    .brand-text p{
+        font-size:8px;
+    }
+
+    .logo{
+        width:45px;
+        height:45px;
+        font-size:15px;
+    }
+
+    .hero{
+        min-height:620px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .quick-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .quick-item{
+        border-right:none;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+    }
+
+    .about-image{
+        height:320px;
+    }
+
+    .about-list{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .stat{
+        border:none;
+    }
+
+    .stat h2{
+        font-size:34px;
+    }
+
+    .program-grid,
+    .facility-grid{
+        grid-template-columns:1fr;
+    }
+
+    .placement-image{
+        height:300px;
+    }
+
+    .admission h2{
+        font-size:32px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="topbar">
+
+    <div class="topbar-content">
+
+        <div>
+            🎓 Welcome to Malineni Lakshmaiah Women's Engineering College
+        </div>
+
+        <div class="topbar-right">
+            <span>📞 Admission Helpline</span>
+            <span>✉️ Email Us</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav class="navbar">
+
+    <a href="#home" class="brand">
+
+        <div class="logo">
+            ML
+        </div>
+
+        <div class="brand-text">
+            <h2>ML WOMEN'S ENGINEERING COLLEGE</h2>
+            <p>Empowering Women Through Engineering & Innovation</p>
+        </div>
+
+    </a>
+
+
+    <ul class="nav-links" id="navLinks">
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Academics</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#placements">Placements</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <li>
+            <a href="#admission" class="nav-apply">
+                Apply Now
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="menu" onclick="toggleMenu()">
+        ☰
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            🌟 Excellence in Women's Engineering Education
+        </span>
+
+        <h1>
+            Shape Your Future With
+            <span>Engineering & Innovation</span>
+        </h1>
+
+        <p>
+            Welcome to Malineni Lakshmaiah Women's Engineering College —
+            a place where knowledge, technology, confidence and leadership
+            come together to create tomorrow's engineers.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#admission" class="btn btn-primary">
+                Explore Admissions →
+            </a>
+
+            <a href="#about" class="btn btn-light">
+                Discover Our College
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK INFORMATION
+========================================================= -->
+
+<div class="quick-info">
+
+    <div class="quick-grid">
+
+        <div class="quick-item">
+            <div class="quick-icon">🎓</div>
+            <h3>Quality Education</h3>
+            <p>Learning for tomorrow</p>
+        </div>
+
+        <div class="quick-item">
+            <div class="quick-icon">💻</div>
+            <h3>Modern Technology</h3>
+            <p>Industry-focused learning</p>
+        </div>
+
+        <div class="quick-item">
+            <div class="quick-icon">👩‍🎓</div>
+            <h3>Women Empowerment</h3>
+            <p>Confidence & leadership</p>
+        </div>
+
+        <div class="quick-item">
+            <div class="quick-icon">🚀</div>
+            <h3>Career Growth</h3>
+            <p>Skills for success</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="label">
+                About MLWEC
+            </div>
+
+            <h2>Education That Builds Confidence</h2>
+
+            <p>
+                Developing technically strong, socially responsible and
+                confident women engineers.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-image"></div>
+
+
+            <div class="about-content">
+
+                <h2>Learning Beyond the Classroom</h2>
+
+                <p>
+                    Malineni Lakshmaiah Women's Engineering College aims to
+                    provide students with a strong academic foundation along
+                    with practical exposure and professional skills.
+                </p>
+
+                <p>
+                    Students are encouraged to participate in technical
+                    projects, workshops, innovation activities, cultural
+                    programs and career-development initiatives.
+                </p>
+
+                <div class="about-list">
+
+                    <div>✓ Experienced Faculty</div>
+                    <div>✓ Practical Learning</div>
+                    <div>✓ Technical Innovation</div>
+                    <div>✓ Career Development</div>
+                    <div>✓ Student Activities</div>
+                    <div>✓ Women Leadership</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATISTICS
+========================================================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <h2 class="counter" data-target="20">0</h2>
+                <p>Years of Excellence</p>
+            </div>
+
+            <div class="stat">
+                <h2 class="counter" data-target="2500">0</h2>
+                <p>Students</p>
+            </div>
+
+            <div class="stat">
+                <h2 class="counter" data-target="100">0</h2>
+                <p>Faculty Members</p>
+            </div>
+
+            <div class="stat">
+                <h2 class="counter" data-target="15">0</h2>
+                <p>Academic Programs</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ACADEMICS
+========================================================= -->
+
+<section class="programs" id="programs">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="label">
+                Academics
+            </div>
+
+            <h2>Explore Our Programs</h2>
+
+            <p>
+                Build strong technical foundations and prepare for
+                opportunities in a rapidly changing technology world.
+            </p>
+
+        </div>
+
+
+        <div class="program-grid">
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Computer Science & Engineering
+                </h3>
+
+                <p>
+                    Software development, programming, databases,
+                    web technologies, cloud computing and emerging
+                    technologies.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    Artificial Intelligence & Machine Learning
+                </h3>
+
+                <p>
+                    Artificial intelligence, machine learning,
+                    data science, computer vision and intelligent
+                    applications.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    📡
+                </div>
+
+                <h3>
+                    Electronics & Communication Engineering
+                </h3>
+
+                <p>
+                    Communication systems, embedded systems,
+                    electronics, IoT and digital technologies.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Electrical & Electronics Engineering
+                </h3>
+
+                <p>
+                    Electrical systems, power electronics,
+                    automation and modern energy technologies.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    ⚙️
+                </div>
+
+                <h3>
+                    Mechanical Engineering
+                </h3>
+
+                <p>
+                    Mechanical design, manufacturing, automation,
+                    production and engineering systems.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    🏗️
+                </div>
+
+                <h3>
+                    Civil Engineering
+                </h3>
+
+                <p>
+                    Construction, structural engineering,
+                    infrastructure planning and environmental
+                    engineering.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FACILITIES
+========================================================= -->
+
+<section class="facilities" id="facilities">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="label">
+                Campus
+            </div>
+
+            <h2>World of Opportunities</h2>
+
+            <p>
+                A campus environment designed to support academic,
+                technical and personal growth.
+            </p>
+
+        </div>
+
+
+        <div class="facility-grid">
+
+            <div class="facility">
+                <div class="facility-icon">📚</div>
+                <h3>Central Library</h3>
+            </div>
+
+            <div class="facility">
+                <div class="facility-icon">🔬</div>
+                <h3>Advanced Laboratories</h3>
+            </div>
+
+            <div class="facility">
+                <div class="facility-icon">💻</div>
+                <h3>Computer Labs</h3>
+            </div>
+
+            <div class="facility">
+                <div class="facility-icon">🏠</div>
+                <h3>Hostel Facility</h3>
+            </div>
+
+            <div class="facility">
+                <div class="facility-icon">🏃‍♀️</div>
+                <h3>Sports & Fitness</h3>
+            </div>
+
+            <div class="facility">
+                <div class="facility-icon">🚌</div>
+                <h3>Transportation</h3>
+            </div>
+
+            <div class="facility">
+                <div class="facility-icon">🍴</div>
+                <h3>Cafeteria</h3>
+            </div>
+
+            <div class="facility">
+                <div class="facility-icon">📶</div>
+                <h3>Campus Wi-Fi</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PLACEMENTS
+========================================================= -->
+
+<section class="placements" id="placements">
+
+    <div class="container">
+
+        <div class="placement-grid">
+
+            <div class="placement-content">
+
+                <div class="section-heading" style="text-align:left;margin-bottom:25px;">
+
+                    <div class="label">
+                        Career Development
+                    </div>
+
+                    <h2>
+                        Preparing Students for the Professional World
+                    </h2>
+
+                </div>
+
+                <p>
+                    Our career-focused activities help students develop
+                    technical knowledge, communication skills,
+                    problem-solving ability and professional confidence.
+                </p>
+
+                <div class="placement-points">
+
+                    <div class="placement-point">
+                        ✓ Technical Training
+                    </div>
+
+                    <div class="placement-point">
+                        ✓ Aptitude & Reasoning Practice
+                    </div>
+
+                    <div class="placement-point">
+                        ✓ Communication Skills
+                    </div>
+
+                    <div class="placement-point">
+                        ✓ Mock Interviews
+                    </div>
+
+                    <div class="placement-point">
+                        ✓ Industry Interaction
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="placement-image"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EVENTS
+========================================================= -->
+
+<section class="events" id="events">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="label">
+                Campus Life
+            </div>
+
+            <h2>Events & Activities</h2>
+
+            <p>
+                Technical events, workshops and activities that make
+                college life exciting and meaningful.
+            </p>
+
+        </div>
+
+
+        <div class="events-grid">
+
+
+            <div class="event-card">
+
+                <div class="event-img event-1"></div>
+
+                <div class="event-content">
+
+                    <div class="event-date">
+                        TECHNICAL EVENT
+                    </div>
+
+                    <h3>
+                        Innovation & Technology Fest
+                    </h3>
+
+                    <p>
+                        Students present innovative ideas,
+                        projects and technology solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <div class="event-img event-2"></div>
+
+                <div class="event-content">
+
+                    <div class="event-date">
+                        WORKSHOP
+                    </div>
+
+                    <h3>
+                        Technical Workshops
+                    </h3>
+
+                    <p>
+                        Hands-on learning sessions focused on
+                        modern tools and technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <div class="event-img event-3"></div>
+
+                <div class="event-content">
+
+                    <div class="event-date">
+                        CAMPUS LIFE
+                    </div>
+
+                    <h3>
+                        Cultural & Student Activities
+                    </h3>
+
+                    <p>
+                        Cultural programs, clubs and activities
+                        encourage creativity and teamwork.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ADMISSION
+========================================================= -->
+
+<section class="admission" id="admission">
+
+    <div class="container">
+
+        <h2>
+            Start Your Engineering Journey
+        </h2>
+
+        <p>
+            Take the next step toward your academic and professional
+            goals. Explore programs and connect with our admissions team.
+        </p>
+
+        <button class="btn btn-primary" onclick="admissionAlert()">
+            Admission Enquiry →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="label">
+                Contact
+            </div>
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                Have questions about admissions, programs or campus life?
+                Send us a message.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-info">
+
+                <h2>College Information</h2>
+
+                <div class="contact-item">
+
+                    <strong>📍 Address</strong>
+
+                    <span>
+                        Malineni Lakshmaiah Women's Engineering College,
+                        Andhra Pradesh, India
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>📞 Phone</strong>
+
+                    <span>
+                        +91 XXXXX XXXXX
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>✉️ Email</strong>
+
+                    <span>
+                        info@mlwec.edu.in
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>🌐 Website</strong>
+
+                    <span>
+                        Official College Website
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-form">
+
+                <form id="contactForm">
+
+                    <div class="form-group">
+
+                        <label>
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Malineni Lakshmaiah Women's Engineering College
+                </h3>
+
+                <p>
+                    Empowering women through engineering education,
+                    innovation, technology and leadership.
+                </p>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#programs">Academics</a>
+                    </li>
+
+                    <li>
+                        <a href="#facilities">Facilities</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Student
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#admission">Admissions</a>
+                    </li>
+
+                    <li>
+                        <a href="#placements">Placements</a>
+                    </li>
+
+                    <li>
+                        <a href="#events">Events</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Malineni Lakshmaiah Women's Engineering College.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button id="topButton" onclick="scrollTopPage()">
+    ↑
+</button>
+
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMenu(){
+
+    const nav = document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+/* Close mobile menu after clicking a link */
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        document
+            .getElementById("navLinks")
+            .classList.remove("active");
+
+    });
+
+});
+
+
+/* =========================================================
+   COUNTER ANIMATION
+========================================================= */
+
+const counters =
+    document.querySelectorAll(".counter");
+
+let countersStarted = false;
+
+
+function startCounters(){
+
+    if(countersStarted) return;
+
+    const stats =
+        document.querySelector(".stats");
+
+    const position =
+        stats.getBoundingClientRect().top;
+
+    if(position < window.innerHeight - 100){
+
+        countersStarted = true;
+
+        counters.forEach(function(counter){
+
+            const target =
+                Number(counter.dataset.target);
+
+            let current = 0;
+
+            const increment =
+                Math.max(1, Math.ceil(target / 70));
+
+            function update(){
+
+                current += increment;
+
+                if(current >= target){
+
+                    counter.textContent =
+                        target + "+";
+
+                }else{
+
+                    counter.textContent =
+                        current;
+
+                    requestAnimationFrame(update);
+
+                }
+
+            }
+
+            update();
+
+        });
+
+    }
+
+}
+
+
+window.addEventListener("scroll",startCounters);
+
+startCounters();
+
+
+/* =========================================================
+   BACK TO TOP BUTTON
+========================================================= */
+
+const topButton =
+    document.getElementById("topButton");
+
+
+window.addEventListener("scroll",function(){
+
+    if(window.scrollY > 500){
+
+        topButton.style.display = "block";
+
+    }else{
+
+        topButton.style.display = "none";
+
+    }
+
+});
+
+
+function scrollTopPage(){
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+
+/* =========================================================
+   ADMISSION BUTTON
+========================================================= */
+
+function admissionAlert(){
+
+    alert(
+        "Thank you for your interest in Malineni Lakshmaiah Women's Engineering College!\n\n" +
+        "Please contact the college admission office for current admission details."
+    );
+
+}
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+document
+    .getElementById("contactForm")
+    .addEventListener("submit",function(event){
+
+        event.preventDefault();
+
+        const name =
+            document.getElementById("name").value;
+
+        alert(
+            "Thank you, " +
+            name +
+            "!\n\nYour message has been submitted successfully."
+        );
+
+        this.reset();
+
+    });
+
+
+/* =========================================================
+   SIMPLE SCROLL REVEAL
+========================================================= */
+
+const revealElements =
+    document.querySelectorAll(
+        ".program-card, .facility, .event-card, .about-content, .placement-content"
+    );
+
+
+function revealOnScroll(){
+
+    revealElements.forEach(function(element){
+
+        const position =
+            element.getBoundingClientRect().top;
+
+        if(position < window.innerHeight - 80){
+
+            element.style.opacity = "1";
+
+            element.style.transform =
+                "translateY(0)";
+
+        }
+
+    });
+
+}
+
+
+revealElements.forEach(function(element){
+
+    element.style.opacity = "0";
+
+    element.style.transform =
+        "translateY(25px)";
+
+    element.style.transition =
+        "all .7s ease";
+
+});
+
+
+window.addEventListener(
+    "scroll",
+    revealOnScroll
+);
+
+revealOnScroll();
+
+</script>
+
+</body>
+</html>
+```
